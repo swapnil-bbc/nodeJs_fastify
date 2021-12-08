@@ -3,5 +3,11 @@
     "fastify": "^3.24.1",
     "fastify-mongodb": "^4.1.1",
     "mongodb": "^4.2.1"
+  },
+  "devDependencies": {
+    "jest": "^27.4.3"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
