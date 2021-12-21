@@ -1,19 +1,19 @@
-const Fastify = require("fastify");
-const fp = require("fastify-plugin");
-const { build } = require("../app");
+// const Fastify = require("fastify");
+// const fp = require("fastify-plugin");
+// const { build } = require("../app");
 
-function startApp() {
-  const app = Fastify();
+// function startApp() {
+//   const app = Fastify();
 
-  beforeAll(async () => {
-      console.log("app debug",build);
-    void app.register(fp(build));
-    await app.ready();
-  });
+//   beforeAll(async () => {
+//       console.log("app debug",build);
+//     void app.register(fp(build));
+//     await app.ready();
+//   });
 
-  afterAll(() => app.close());
+//   afterAll(() => app.close());
 
-  return app;
-}
+//   return app;
+// }
 
-module.exports = {startApp};
+// module.exports = {startApp};
